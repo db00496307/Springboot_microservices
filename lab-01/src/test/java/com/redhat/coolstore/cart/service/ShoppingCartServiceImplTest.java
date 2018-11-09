@@ -64,7 +64,7 @@ public class ShoppingCartServiceImplTest {
         }).when(priceCalculationService).priceShoppingCart(any(ShoppingCart.class));
     }
     
-    // @Test
+    @Test
     public void testGetNewShoppingCart() {
         ShoppingCart sc = shoppingCartService.getShoppingCart("123456");
 
@@ -76,7 +76,7 @@ public class ShoppingCartServiceImplTest {
         assertThat(sc.getShoppingCartItemList().size(), equalTo(0));
     }
 
-    // @Test
+    @Test
     public void testAddNewItemToCart() {
 
         ShoppingCart sc = shoppingCartService.addToCart("123456", "p1", 1);
