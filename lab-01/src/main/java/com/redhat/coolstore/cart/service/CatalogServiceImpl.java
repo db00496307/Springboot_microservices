@@ -3,6 +3,9 @@ package com.redhat.coolstore.cart.service;
 import com.redhat.coolstore.cart.model.Product;
 import org.springframework.stereotype.Component;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.client.HttpClientErrorException;
+import org.springframework.web.client.RestTemplate;
 
 @Component
 public class CatalogServiceImpl implements CatalogService {
