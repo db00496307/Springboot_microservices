@@ -1,7 +1,9 @@
 package com.redhat.coolstore.cart.service;
 
 import com.redhat.coolstore.cart.model.ShoppingCart;
+import org.springframework.stereotype.Component;
 
+@Component
 public class PriceCalculationServiceImpl implements PriceCalculationService {
 
     @Override
